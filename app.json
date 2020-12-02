@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/home/search",
+    "pages/user/user",
+    "pages/home/home",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/childAccount/detail",
+    "pages/childAccount/add",
+    "pages/childAccount/edit",
+    "pages/childAccount/manage",
+    "pages/search/serach"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/dist/button/index",
+    "van-cell": "@vant/weapp/dist/cell/index",
+    "van-cell-group": "@vant/weapp/dist/cell-group/index",
+    "van-toast": "@vant/weapp/dist/toast/index",
+    "van-dialog": "@vant/weapp/dist/dialog/index",
+    "van-icon": "@vant/weapp/dist/icon/index"
+  }
+}

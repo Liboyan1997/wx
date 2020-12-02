@@ -1,0 +1,24 @@
+/* pages/home/search.wxss */
+.backBtn{
+  display: inline-block;
+  margin: 20rpx 15rpx;
+  width: 40rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  font-size: 40rpx;
+}
+.backBtn>image{
+  display: block;
+}
+.header{
+  display: flex;
+
+}
+.input{
+  overflow: hidden;
+  width: 448rpx;
+  height: 64rpx;
+  padding:0 10rpx;
+  display: flex;
+  justify-content: space-between;
+}

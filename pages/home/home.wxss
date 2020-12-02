@@ -1,0 +1,108 @@
+/* pages/home/home.wxss */
+.pageContainer{
+  height: 420rpxrpx;
+  padding-top: 140rpx;
+  background: linear-gradient(90deg, #3CB7FF 0%, #1C81FF 100%);
+  color: white;
+  /* padding: 36rpx 0 0 0; */
+  font-family: PingFangSC-Medium, PingFang SC;
+}
+.pageContainer>view:nth-child(1){
+  display: flex;
+  align-items: center;
+}
+.pageContainer>view>image{
+  width: 96rpx;
+  height: 96rpx;  
+  border-radius: 50%;
+  margin-left: 32rpx;
+}
+.info{
+  height: 44rpx;
+  line-height: 44rpx;
+  display: block;
+  /* color: white; */
+  font-weight: 500;
+  font-size: 32rpx;
+  margin: 2rpx 24rpx;
+}
+.cardbox{
+  width: 750rpx;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-around;
+  margin: 34rpx 0  34rpx 0;
+}
+.cardbox text{
+  text-align: center;
+  display: block;
+  height: 44rpx;
+  line-height: 44rpx;
+  margin: 2rpx 0;
+}
+.title{
+  font-size: 32rpx;
+}
+.content{
+  font-size: 24rpx;
+}
+.bottom{
+  background-color:white;
+  border-radius:24rpx 24rpx 0 0;
+  color:black;
+  padding:32rpx;
+}
+.bottom>text{
+  display: block;
+  width: 100%;
+  font-size: 36rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 10rpx 0;
+}
+.function{
+  height: 124rpx;
+  display: flex;
+  margin: 10rpx 0 30rpx 0;
+  justify-content: space-around;
+}
+.function>view{
+  width: 312rpx;
+  height: 104rpx;
+  /* background-color: red; */
+  padding: 10rpx;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+.function text{
+  display: block;
+  height: 40rpx;
+  line-height: 40rpx;
+  width: 176rpx;
+  margin: 10rpx 0;
+}
+.function image{
+  height: 64rpx;
+  width: 64rpx;
+  /* border: 1px solid red; */
+}
+.tableList{
+  min-height: 400rpx;
+  padding-bottom: 120rpx;
+}
+.qd{
+  font-size: 35rpx;
+  padding-top: 10rpx;
+  border-radius: 50%;
+  text-align: center;
+  height: 86rpx;
+  width: 96rpx;
+  position: fixed;
+  background: linear-gradient(90deg, #3CB7FF 0%, #1C81FF 100%);
+  bottom: 40rpx;
+  right: 60rpx;
+}
+.searchBtn{
+  margin: 5rpx;
+}

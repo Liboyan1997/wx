@@ -1,0 +1,32 @@
+/* pages/user/user.wxss */
+.backBtn{
+  display: inline-block;
+  margin: 20rpx 15rpx;
+  width: 40rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  font-size: 40rpx;
+}
+.backBtn>image{
+  display: block;
+}
+.header{
+  display: flex;
+}
+.con{
+  padding: 32rpx;
+}
+.imgCon{
+  position: absolute;
+  bottom: 10rpx;
+  right: 24rpx;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+}
+.img{
+  display: block;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+}

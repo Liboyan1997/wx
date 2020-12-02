@@ -1,0 +1,27 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+
+  <view class="header">
+    <navigator open-type="navigateBack" class="backBtn">
+      <van-icon name="arrow-left" />
+    </navigator>
+    <view style='height:94rpx;line-height:90rpx;flex:1;text-align:center;margin-right:60rpx;'>个人中心</view>
+  </view>
+  <view class="con">
+    <van-cell-group>
+      <van-cell title='头像' use-label-slot='{{true}}' label-class='imgCon' value=''>
+        <view slot='label' >
+         <image src="../../assets/img/logo.jpg" alt="" class="img"/>
+        </view>
+      </van-cell>
+      <van-cell title="姓名" value="{{userInfo.name}}" />
+      <van-cell title="手机" value="{{userInfo.tel}}" />
+      <van-cell title="公司" value="{{userInfo.company}}" title-width='150rpx'/>
+      <van-cell title="子账号" link-type  is-link  url="../childAccount/searchAccount"/>
+    </van-cell-group>
+    <view style="padding:20rpx 100rpx;margin:500rpx 0 0 0;">
+      <van-button bindtap="quit" size='large' type="danger" plain>退出登录</van-button>
+    </view>
+  </view>
+</view>
+<van-toast id="van-toast" />

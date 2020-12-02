@@ -1,0 +1,7 @@
+.container {
+  padding-top: 50rpx;
+  width: 750rpx;
+  overflow: hidden;
+  background-color:white;
+  color: #222222;
+} 

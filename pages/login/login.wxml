@@ -1,0 +1,42 @@
+<!--pages/login.wxml-->
+
+<view class="container">
+  <view class="logo">
+   <image src="../../assets/img/logo.jpg"></image>
+    <text>融合地产</text>
+  </view>
+</view>
+<van-cell-group>
+  <van-field
+    type='number'
+    label='手机号'
+    value="{{ tel }}"
+    placeholder="请输入手机号码"
+    bindchange="onChange"
+    error-message='{{telError}}'
+    id="tel"
+  />
+  <van-field
+    type='number'
+    label='验证码'
+    value="{{ code }}"
+    placeholder="请输入验证码"
+ 
+    bindchange="onChange"
+    id="code"
+    use-button-slot
+  >
+  <van-button slot="button" size="small" type="primary" bindtap="sendCode" disabled='{{disabled}}'>{{codeMessage}}</van-button>
+  </van-field>
+</van-cell-group>
+<view style="padding:0 50rpx;margin:50rpx 0">
+  <van-button  type="primary" bindtap="loginByTel"  size="large">登录</van-button>
+</view>
+
+<view class="footer">
+  <button open-type="getPhoneNumber" bindgetphonenumber="loginByWX" hover-class="none">
+    <image src="../../assets/img/weixin.png"></image>
+  </button>
+<text>绑定开通报备权限手机号的微信可登录</text>
+</view>
+<van-toast id="van-toast" />

@@ -1,0 +1,17 @@
+<view>
+  <view class="item" wx:for="{{lists}}"  wx:key='title'>
+    <view class="marginRinght32">
+      <image src='../../../assets/img/logo.jpg' class="img"></image>
+    </view>
+    <view >
+      <view class="title">{{item.title}}</view>
+      <view class="yjdw">佣金点位：{{index}}</view>
+      <view class="info">已报备 | 已带看 | 已成交</view>
+      <view class="info">深圳·光明 | 78万元/套起 </view>
+      <view class="btns">
+        <van-button type="info" plain size='mini' bindtap="clickBtn" data-btn="{index:{{index}},type:'list'}" >报备列表</van-button>
+        <van-button type="info"  size='mini' bindtap="clickBtn" data-btn="{index:{{index}},type:'add'}">添加报备</van-button>
+      </view>
+    </view>
+  </view>
+</view>

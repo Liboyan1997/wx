@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "table-list":"./component/tableList",
+    "van-field": "../../@vant/weapp/dist/field/index"
+  }
+}

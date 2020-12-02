@@ -1,0 +1,20 @@
+<!--pages/home/search.wxml-->
+<view class="container con">
+  <view class="header">
+    <navigator open-type="navigateBack" class="backBtn">
+      <van-icon name="arrow-left" />
+    </navigator>
+    <view class='input'>
+      <image src='../../assets/img/Group 3.png' style="display:block;height:48rpx;width:48rpx;margin:17rpx 0;" bindtap="clickSearch">
+      </image>
+      <view style="width:390rpx;height:44rpx">
+        <van-field  value="{{ message }}" type="textarea" placeholder="请输入楼盘名称" autosize style='margin:0;padding:0'  bindchange="onChange"/>
+      </view>
+    </view>
+  </view>
+</view>
+<view style="margin:32rpx">
+  <table-list/>
+</view>
+
+<van-toast id="van-toast" />

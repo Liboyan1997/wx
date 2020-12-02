@@ -1,0 +1,53 @@
+<!--pages/home/home.wxml-->
+<view class="pageContainer">
+  <view bindtap="toUser">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <view>
+      <text class="info">{{userInfo.nickName}} {{tel}}</text>
+      <text class="info" style='font-size:24rpx'>{{company}}</text>
+    </view>
+  </view>
+  <view class="cardbox">
+    <view wx:for="{{list}}" bindtap="clickCard" wx:key='title' data-index='{{index}}'>
+      <text class="title">{{item.title}}</text>
+      <text class="content">{{item.content||'暂无数据'}}</text>
+    </view>
+  </view>
+  <view class='bottom'>
+    <text>常用功能</text>
+    <view class="function">
+      <view bindtap="clickBtn" data-to="addReport">
+        <view>
+          <text style='font-size:28rpx;'>客户报备</text>
+          <text style='font-size:22rpx;color:#949699;'>添加新报备</text>
+        </view>
+        <image src='../../assets/img/addReport.png'></image>
+      </view>
+      <view bindtap="clickBtn" data-to="seeVisit">
+        <view>
+          <text style='font-size:28rpx;'>报备带看</text>
+          <text style='font-size:22rpx;color:#949699;'>所有报备带看记录</text>
+        </view>
+        <image src='../../assets/img/seeVisit.png'></image>
+      </view>
+    </view>
+    <view style="display:flex; justify-content: space-between;align-item:center">
+      <text>热门楼盘</text>
+      <navigator  url='./search' open-type="navigate" class="searchBtn">
+        <image src='../../assets/img/Group 3.png' style="display:block;height:48rpx;width:48rpx" bindtap="toSearch"></image>
+      </navigator>
+     
+    </view>
+    <view class="tableList">
+      <table-list/>
+    </view>
+  </view>
+  <view class="qd">
+    <view>
+      <van-icon name="phone" color='white'/>
+    </view>
+    <view style="font-size: 20rpx;">
+      渠道
+    </view>
+  </view>
+</view>
